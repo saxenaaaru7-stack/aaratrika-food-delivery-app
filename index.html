@@ -499,7 +499,7 @@
             <div class="container">
                 <h2>Get in Touch</h2>
                 <p>Have a question or feedback? We'd love to hear from you.</p>
-                <form>
+                <form action="https://formspree.io/f/xqalgaok" method="POST">
                     <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" id="name" required>
@@ -572,6 +572,13 @@
                 });
             });
         });
+        <p id="form-response" style="display:none; color: green;">Thank you! Your message has been sent.</p>
+<script>
+  document.querySelector("form").addEventListener("submit", function () {
+    document.getElementById("form-response").style.display = "block";
+  });
+</script>
+
     </script>
 
 </body>
